@@ -41,9 +41,9 @@ pub enum Resource {
 
 #[derive(Debug)]
 pub struct HttpRequest {
-    method: Method,
+    pub method: Method,
     version: Version,
-    resource: Resource,
+    pub resource: Resource,
     headers: HashMap<String,String>,
     msg_body: String,
 }
